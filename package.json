@@ -1,0 +1,16 @@
+{
+  "name": "gc-doc-composer",
+  "version": "1.0.0",
+  "description": "It composes documents.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
