@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite'
+import path from 'path';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   build: {
     lib: {
       entry: 'src/index.ts',
@@ -22,5 +24,10 @@ export default defineConfig({
   },
   server: {
     open: '/src/playground/index.html',
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, './src'),
+    },
   },
 });

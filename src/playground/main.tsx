@@ -1,12 +1,13 @@
+import "../index.css"
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { MyComponent } from '../components/MyComponent';
+import { TextComposer } from '../components/TextComposer';
 
 const App = () => {
   return (
     <div style={{ margin: 32 }}>
-      <h1>Playground: MyComponent</h1>
-      <MyComponent label="Test label from playground!" />
+      <h1 className="mb-12 text-xl">Playground: TextComposer</h1>
+      <TextComposer />
     </div>
   );
 };
