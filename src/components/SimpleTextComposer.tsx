@@ -36,7 +36,7 @@ const initialValue: Value = [
 
 function MergeToken({ children, ...props }: PlateLeafProps) {
   return (
-    <PlateLeaf {...props} className="bg-blue-200 px-1 py-1 rounded-lg">
+    <PlateLeaf {...props} className="bg-blue-200 px-1 py-0.5 rounded-lg">
       <span>{children}</span>
     </PlateLeaf>
   );
