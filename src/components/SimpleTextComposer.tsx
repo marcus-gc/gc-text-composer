@@ -36,6 +36,9 @@ const initialValue: Value = [
 
 function MergeToken({ children, ...props }: PlateLeafProps) {
   return (
+    // We'll want to turn this into a non editable plate element
+    // example: https://platejs.org/docs/components/inline-combobox
+    // look at mention-element.tsx
     <PlateLeaf {...props} className="bg-blue-200 px-1 py-0.5 rounded-lg">
       <span>{children}</span>
     </PlateLeaf>
